@@ -17,7 +17,7 @@ async def main(request: Request):
 
     try:
         response = client.chat.completions.create(
-            model="gpt-5.5",  # или "deepseek-r1", "default", "fast"
+            model="default",  # или "deepseek-r1", "default", "fast"
             messages=[{"role": "user", "content": user_text}],
             max_tokens=1000,
         )
